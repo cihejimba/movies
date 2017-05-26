@@ -1,0 +1,27 @@
+#navbar {
+  background: #293742;
+  box-shadow: 0 1px 0 rgba(16, 22, 26, .4);
+  margin: auto;
+  max-width: 960px;
+}
+
+#navbar .pt-align-right a:not(:first-child) {
+  margin-left: 4px;
+}
+
+#navbar .pt-align-right button:not(:last-child) {
+  margin-right: 4px;
+}
+
+#navbar .pt-active {
+  box-shadow: none;
+}
+
+#navbar .pt-navbar-heading {
+  color: #f5f8fa;
+  font-weight: 600;
+}
+
+#navbar .pt-navbar-heading:hover {
+  text-decoration: none;
+}

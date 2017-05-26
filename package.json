@@ -1,0 +1,29 @@
+{
+  "name": "movies",
+  "version": "0.1.0",
+  "description": "Watch trailers.",
+  "private": true,
+  "license": "MIT",
+  "author": "Amit Burstein <amit.burstein@gmail.com> (https://amitburst.me)",
+  "homepage": "https://movies.amitburst.me",
+  "repository": "github:amitburst/movies",
+  "bugs": "https://github.com/amitburst/movies/issues",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^1.17.1",
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-promise": "^0.5.3"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.6"
+  }
+}
