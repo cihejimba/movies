@@ -24,6 +24,9 @@
     "redux-promise": "^0.5.3"
   },
   "devDependencies": {
+    "codeclimate-test-reporter": "^0.4.1",
+    "enzyme": "^2.8.2",
+    "react-addons-test-utils": "^15.5.1",
     "react-scripts": "1.0.6"
   }
 }
