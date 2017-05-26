@@ -5,8 +5,8 @@ cache: yarn
 script:
   - yarn test -- --coverage
   - yarn build
-  after_success:
-    - codeclimate-test-reporter < ./coverage/lcov.info
-  addons:
-    code_climate:
-      repo_token: 66c0949c72771ead20dc90fb62d0dbb8c4adce8f3ef028a56d0550b2cdf5777f
+after_success:
+  - codeclimate-test-reporter < ./coverage/lcov.info
+addons:
+  code_climate:
+    repo_token: 66c0949c72771ead20dc90fb62d0dbb8c4adce8f3ef028a56d0550b2cdf5777f
