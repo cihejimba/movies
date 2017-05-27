@@ -3,6 +3,7 @@ import Navbar from './navbar/navbar';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import promiseMiddleware from 'redux-promise';
+import reducer from './reducer';
 import registerServiceWorker from './registerServiceWorker';
 import {FocusStyleManager} from '@blueprintjs/core';
 import {BrowserRouter, Route} from 'react-router-dom';
@@ -13,14 +14,14 @@ import './index.css';
 
 FocusStyleManager.onlyShowFocusOnTabs();
 
-const store = createStore(() => {}, applyMiddleware(promiseMiddleware));
+const store = createStore(reducer, applyMiddleware(promiseMiddleware));
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <div className="pt-dark">
         <Route path="/" component={Navbar} />
-        <div id="content">
+        <div>
           <Route path="/" exact component={Home} />
         </div>
       </div>
@@ -29,7 +30,3 @@ ReactDOM.render(
   document.getElementById('root'));
 
 registerServiceWorker();
-
-fetch('/api/upcoming')
-    .then(response => response.json())
-    .then(data => console.log(data));
