@@ -3,8 +3,11 @@
   "description": "Firebase Cloud Functions for \"movies\"",
   "private": true,
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "firebase-admin": "^5.0.0",
-    "firebase-functions": "^0.5.7"
+    "firebase-functions": "^0.5.7",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4"
   }
 }

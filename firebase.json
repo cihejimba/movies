@@ -3,8 +3,8 @@
     "public": "build",
     "rewrites": [
       {
-        "source": "/api/upcoming",
-        "function": "upcoming"
+        "source": "/api/**",
+        "function": "api"
       },
       {
         "source": "**",
