@@ -3,6 +3,7 @@ import Navbar from './navbar/navbar';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import promiseMiddleware from 'redux-promise';
+import registerServiceWorker from './registerServiceWorker';
 import {FocusStyleManager} from '@blueprintjs/core';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {Provider} from 'react-redux';
@@ -26,3 +27,5 @@ ReactDOM.render(
     </BrowserRouter>
   </Provider>,
   document.getElementById('root'));
+
+registerServiceWorker();

@@ -1,8 +1,5 @@
-const app = require('express')();
 const functions = require('firebase-functions');
 
-app.get('/upcoming', (req, res) => {
-  res.send('Hello, World!');
+exports.upcoming = functions.https.onRequest((req, res) => {
+  res.json({});
 });
-
-exports.api = functions.https.onRequest(app);
