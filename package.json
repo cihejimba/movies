@@ -9,7 +9,7 @@
   "repository": "github:amitburst/movies",
   "bugs": "https://github.com/amitburst/movies/issues",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start & firebase serve --only=hosting,functions",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom"
   },
@@ -26,8 +26,10 @@
   "devDependencies": {
     "codeclimate-test-reporter": "^0.4.1",
     "enzyme": "^2.8.2",
+    "firebase-tools": "^3.9.0",
     "react-addons-test-utils": "^15.5.1",
     "react-scripts": "1.0.6",
     "react-test-renderer": "^15.5.4"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
