@@ -1,5 +1,6 @@
 .movie {
   margin: 0 12px 40px 12px;
+  width: 210px;
 }
 
 .movie > img {
